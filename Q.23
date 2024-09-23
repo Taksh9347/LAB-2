@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+	int base,exponent,N  = 1,i;
+	printf("Enter the value of base and exponents :\n");
+	scanf("%d%d",&base,&exponent);
+	for(i=1;i<=exponent;i++)
+	{
+		N *= base;// here, (N *= base) means N = N*base
+	}
+	printf("%d raised to the power %d is %d \n",base,exponent,N);
+	return 0;
+}
