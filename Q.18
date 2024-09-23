@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main()
+{
+	int a,b,c,max;
+	printf("Enter the values of a,b and c \n");
+	scanf("%d%d%d",&a,&b,&c);
+	
+	max = (a>b)?(a>c?a:c):(b>c?b:c);  // (a:c),,here this means that if "a" is greater then max is "a", else max is "c".
+	printf("The greatest number is %d \n",max);
+	return 0;
+}
